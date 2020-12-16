@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>FUCKIN FRICKIN ЧСВ COUNTER</title>
+	
+	<style type="text/css">
+	@font-face {
+		font-family: Fixedsys;
+		src: url(pixels/minecraft.ttf);
+	}
+	body {
+		background-image: url('pixels/images/bg.png');
+		background-size: 20%;
+	}
+
+	#p1, #p2 {
+		height: 280px;
+		padding: 50px;
+		padding-top: 0px;
+	}
+
+	#p2 {
+		position: absolute;
+		top: 200px;
+		right: 30px;
+
+	}
+
+	#p1{
+		position: absolute;
+		top: 200px;
+		left: 30px;
+	}
+
+	#cnt1 {
+		position: absolute;
+		top: 500px;
+		left: 100px;
+		text-align: center;
+	}
+
+	#cnt2 {
+		position: absolute;
+		top: 500px;
+		right: 100px;
+		text-align: center;
+	}
+
+	#point1, #point2 {
+		font-size: 100pt;
+		color: white;
+		font-family: Fixedsys;
+	}
+
+	#cnt1 img, #cnt2 img{
+		width: 120px;
+		padding: 10px;
+	}
+
+	#frame {
+		width: 900px;
+		min-height: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	
+		position: relative;
+		//background-color: #142d76;
+		padding: 10px;
+
+	}
+
+	h1 {
+		color: white;
+		font-size: 40pt;
+		font-family: Fixedsys, sans-serif;
+		text-align: center;
+
+	}
+
+	#vs {
+		font-family: Fixedsys;
+		font-size: 85pt;
+		text-align: center;
+		color: white;
+		width: 100px;
+
+		position: absolute;
+		top: 300px;
+		left: 400px;
+
+	}
+	button {
+		background: none;
+		border: none;
+	}
+
+	</style>
+
+	
+</head>
+<body>
+	<!— Yandex.Metrika counter —> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter38086335 = new Ya.Metrika({ id:38086335, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/38086335" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!— /Yandex.Metrika counter —>
+	<div id="frame">
+		<h1>FUCKIN FRICKIN CH.S.V. COUNTER</h1>
+		<img src="pixels/images/p1.png" id="p1">
+		<div id="vs">vs</div>
+		<img src="pixels/images/p2.png" id="p2">
+
+		<div id="cnt1">
+			<button id="up1"><img src="pixels/images/up.png"></button> <br>
+			<span id="point1">0</span> <br>
+			<button id="down1"><img src="pixels/images/down.png"></button>
+		</div>
+		<div id="cnt2">
+			<button id="up2"><img src="pixels/images/up.png"></button> <br>
+			<span id="point2">0</span><br>
+			<button id="down2"> <img src="pixels/images/down.png"></button>
+		</div>
+	</div>
+
+	<script>
+		var p1 = document.getElementById("point1");
+		var p2 = document.getElementById("point2");
+
+		var fr1 = document.getElementById("p1");
+		var fr2 = document.getElementById("p2")
+
+		var cnt1 = 0;
+		var cnt2 = 0;
+
+		function Checking(cnt1, cnt2) {
+			if (cnt1 == cnt2) {
+				fr1.src = "pixels/images/p1.png";
+				fr2.src = "pixels/images/p2.png";
+			}
+			else if (cnt1 > cnt2) {
+				fr1.src = "pixels/images/p1_high.png";
+				fr2.src = "pixels/images/p2_low.png";
+			}
+			else if (cnt1 < cnt2) {
+				fr1.src = "pixels/images/p1_low.png";
+				fr2.src = "pixels/images/p2_high.png";
+			}
+		}
+
+		function IntCnt1() {
+				cnt1++;
+				p1.innerHTML = cnt1.toString();
+				Checking(cnt1, cnt2);
+		}
+
+		function IntCnt2() {
+				cnt2++;
+				p2.innerHTML = cnt2.toString();
+				Checking(cnt1, cnt2);
+		}
+
+
+		
+		function DecCnt1() {
+				cnt1--;
+				p1.innerHTML = cnt1.toString();
+				Checking(cnt1, cnt2);
+		}
+
+		function DecCnt2() {
+				cnt2--;
+				p2.innerHTML = cnt2.toString();
+				Checking(cnt1, cnt2);
+		}
+
+		document.getElementById("up1").onclick = IntCnt1;
+		document.getElementById("up2").onclick = IntCnt2;
+		document.getElementById("down1").onclick = DecCnt1;
+		document.getElementById("down2").onclick = DecCnt2;
+	</script>
+
+</body>

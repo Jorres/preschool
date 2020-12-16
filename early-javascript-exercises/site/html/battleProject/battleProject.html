@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>battleproject</title>
+	<meta charset='utf-8'>
+	<script src="battleScript.js"></script>
+	<link rel="stylesheet" type="text/css" href="battleStyle.css">
+</head>
+
+<body>
+	<!— Yandex.Metrika counter —> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter38086335 = new Ya.Metrika({ id:38086335, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/38086335" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!— /Yandex.Metrika counter —>
+	<div id='window'>
+		<div id='battleView'>
+			<div class='counter' id='blueHP'>1000</div>
+			<div class='counter' id='redHP'>1000</div>
+			<div class='warriors' id='bAlchemist'><img src='armies/blues/bCalmAlchemist.png'></div>
+			<div class='warriors' id='bArcher'><img src='armies/blues/bCalmArcher.png'></div>
+			<div class='warriors' id='bWizard'><img src='armies/blues/bCalmWizard.png'></div>
+			<div class='warriors' id='bWarrior'><img src='armies/blues/bCalmKnight.png'></div>
+			
+			<div class='warriors' id='rAlchemist'><img src='armies/reds/rCalmAlchemist.png'></div>
+			<div class='warriors' id='rArcher'><img src='armies/reds/rCalmArcher.png'></div>
+			<div class='warriors' id='rWizard'><img src='armies/reds/rCalmWizard.png'></div>
+			<div class='warriors' id='rWarrior'><img src='armies/reds/rCalmKnight.png'></div>
+		</div>
+		<div>
+			<button onclick='if (isYourTurn) {attack("bAlchemist", effAlchemist)}' class='army'><img src='armies/blues/bCalmAlchemist.png'></button>
+			<button onclick='if (isYourTurn) {attack("bArcher", effArcher)}' class='army'><img src='armies/blues/bCalmArcher.png'></button>
+			<button onclick='if (isYourTurn) {attack("bWizard", effWizard)}' class='army'><img src='armies/blues/bCalmWizard.png'></button>
+			<button onclick='if (isYourTurn) {attack("bWarrior", effKnight)}' class='army'><img src='armies/blues/bCalmKnight.png'></button>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,232 @@
+﻿@import url(member.css);
+@import url(elder.css);
+@import url(coleader.css);
+
+html {
+	overflow: hidden;
+	color: #999999;
+}
+
+p {
+	color: #с0с0с0;
+	-webkit-transform: scale(1.1, 1.0);
+    -moz-transform: scale(1.1, 1.0);
+    -ms-transform: scale(1.1, 1.0);
+    -o-transform: scale(1.1, 1.0);
+    transform: scale(1.1,1.0);
+}
+
+body {background: url(../stolenWood.png);}
+
+#MemberLab, #common, #canv, #visitor, #mark, #task, #control, #Herbs, .Herb , #authorisation, figcaption, #hello, #MemToStart, #instAway, #lock, #lock img, #lock p, #counter, #authorisation div, #guild, #guildname, #shine, #congrat, #accept, #fire, #eldLab, #leftAlch, #eq, #answer, #rightAlch, #flamedust, #grass, #icepot, #redrombs, #sugar, #waterleaf, #AlchF, #AlchS, #plus , #starroot, #dish, #res, #mix, #cleaner, #markII, #EldToStart, #profile, #resetProgress, #coleaderLab, #mapHolder,
+#map, #ballon, #guide, #texting, #guide img, #getguideaway, #company, #summonMGuide, #summonEGuide, #ColControl, #control, #ColBackPack, #inventar, #reactor, #corovan
+{position: absolute;}
+
+#Memberguide img, #markII, #res, #shine, #congrat, #authorisation div, #guild, #authorisation, #flamedust, #grass, #icepot, #redrombs, #sugar, #waterleaf, #starroot, #dish, #visitor, #task, #lock, #lock img, #leftAlch, #rightAlch, #counter, #AlchF, #AlchS, #eq, #answer, #profile, #profile img, #coleaderLab, #mapHolder, #reactor, #reactor img
+{border: 8px groove #26527C;}
+
+/*              BUTTONS                     */
+
+#mix, #cleaner, #resetProgress, #ColToStart, #summonEGuide , #EldToStart, #newColGame {
+	top: 200px;
+	left: 20px;
+	width: 160px;
+	height: 20px;
+	background: #33CCCC;
+}
+
+#newColGame{
+    width: 200px;
+	float: right;
+	margin-right: 105px;
+}
+
+#getguideaway {
+	bottom: 5px;
+	right: 200px;
+}
+
+#summonEGuide {
+	top: 290px;
+	width: 160px;
+}
+
+#cleaner {
+	top: 230px;
+}
+
+#EldToStart {
+	top: 260px;
+}
+
+#resetProgress{
+	width: 200px;
+	top: 440px;
+	z-index: 100000;
+	left: 40px;
+}
+/*            NO BUTTONS BELOW              */
+
+#guide {
+	top: 300px;
+	padding: 30px 100px;
+	z-index: 510;
+	left: -1000px;
+}
+
+#ballon {
+	width: 560px;
+	height: 340px;		
+	background-color: white;
+	padding: 10px;
+	border: 4px solid gray;
+	float: left;
+	z-index: 500;
+	margin: 20px;
+}
+
+#guide img {
+	left: 430px;
+	top: 20px;
+}
+
+#guide p{
+	margin-right: 160px;
+	padding: 0 0 0 39px;
+}
+
+#plus {
+	top: 20px;
+	left: 150px;
+}
+
+#table{
+	position: fixed;
+	bottom: -60px;
+	left: 0px;
+	z-index: 20;
+}
+
+#shine, #congrat, #authorisation div, #guild , #authorisation, #mark, #task, #control, #Herbs, #counter, #Alch1, #Alch2, #lock, #leftAlch, #rightAlch, #AlchF, #AlchS, #res, #eldLab, #profile , #coleaderLab{
+	background: url(../stolenMetal.png);
+}
+
+#inst, .Herb, .Herb:hover, #member, #elder, #coleader, #leader, #flamedust, #grass, #icepot, #redrombs, #sugar, #waterleaf, #starroot, #dish, #table, #map, .control, #ColBackPack, #grass1, #grass2, #grass3, #grass4, #grass5 { 
+	-webkit-transition: 0.3s ease-in-out 0s;
+    -moz-transition: 0.3s ease-in-out 0s;
+    -o-transition: 0.3s ease-in-out 0s;
+    transition: 0.3s ease-in-out 0s;
+}
+
+#MemberLab, #lock, #congrat, #counter, #common, #shine, #eldLab, #Mguide, #Eguide, #coleaderLab, #profile , #reactor, #reactor img, #guide {
+	-webkit-transition: 1s ease 0s;
+    -moz-transition: 1s ease 0s;
+    -o-transition: 1s ease 0s;
+    transition: 1s ease 0s;
+}
+
+#table:hover {transform: translate3d(0px, -60px, 0px) }
+
+#profile {
+	width: 250px;
+	right: 0px;
+	height: 120px;
+	z-index: 100;
+}
+
+#profile img {
+	margin: 0px 70px; 	
+}
+
+#accept {
+	top: 300px;
+	width: 200px;
+	height: 30px;
+	left: 200px;
+	box-shadow: 0px 0px 100px #33CCCC;
+}
+
+#shine, #congrat {
+	width: 600px;
+	height: 600px;
+	top: 100px;
+	left: 330px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5000px #33CCCC;
+}
+
+#congrat {
+	left: 200%;
+	box-shadow: 0px 0px 5000px #FFC200;
+	font: 16pt Impact, sans-serif;
+	text-align: center;
+}
+
+#guildname {
+	font: 20pt Impact, sans-serif;
+	top: 10px;
+	left: 140px;
+}
+
+#authorisation div {top: 20px;}
+
+#authorisation div, #guild {
+	top: 300px;
+	left: 15px;
+	width: 655px;
+	height: 150px;
+	border-radius: 10px;
+	box-shadow: 0px 8px 2px black;
+	padding: 10px;
+	font: 14pt Impact, sans-serif;
+}
+
+#guild {
+	top: 90px;
+	left: 290px;
+	height: 60px;
+}
+
+#hello {
+	top: 145px;
+	left: 100px;
+	width: 400px;
+	font: 16pt Impact, sans-serif;
+}
+
+figcaption {
+	display: inline;
+	font: 14pt Impact, sans-serif;
+	top: 120px;
+}
+
+#member, #elder, #coleader, #leader {
+	margin-left: 55px;
+	border-radius: 20px;
+	box-shadow: 0px 5px 5px #33CCCC;
+}
+#FM {left: 77px;}
+#SM {left: 208px;}
+#TM {left: 382px;}
+#LEAD {left: 545px;}
+fieldset {height: 120px;}
+
+#member:hover, #elder:hover, #coleader:hover, #leader:hover {
+	box-shadow: 0px 25px 5px #33CCCC;
+	border-radius: 0px;
+}
+
+#common {
+	width: 1250px;
+	height: 1000px;
+}
+
+#authorisation {
+	width: 700px;
+	height: 250px;
+	top: 200px;
+	left: 265px;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 0px 8px 2px black;
+}

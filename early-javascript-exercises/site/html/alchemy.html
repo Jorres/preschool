@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+	<title>DePoison !Lab!</title>
+	<meta charset='utf-8'>
+	<link rel="stylesheet" type="text/css" href="potions/csss/gamecss.css">
+	</head>
+	
+	<body onkeypress='keyPressHandler()'>
+<!— Yandex.Metrika counter —> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter38086335 = new Ya.Metrika({ id:38086335, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/38086335" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!— /Yandex.Metrika counter —>
+	<div id='profile' onclick='expandProfile(1)'>
+		<img src='potions/members/member.png'>
+	</div>
+	
+	<div id="sound"><audio src='potions/soundtrack/begin.mp3' autoplay loop></div>
+	
+	<div id='table'><img src='potions/workTable.png'></div>
+	
+	<div id='congrat'>
+	<button id='accept' onclick='cleanCongrat()'>Принять поздравления!</button>
+	<span> ПОЗДРАВЛЯЮ! <br><br><br><br> Вы возвысились над рекрутами и теперь управляете ими! <br><br><br><br> Получен ранг "Доверенный"!</span>
+	</div>
+	<div id='common'>
+	<div id='shine'></div>
+		<div id='guild'><p id='guildname'>Гильдия Алхимиков</p></div>
+			<div id='authorisation'>
+			<!-- <button id='resetProgress' onclick='unsetProgress()'>А начну-ка я заново!</button> -->
+				<img src="potions/members/member.png" id='member' onclick='changePage(1)'><figcaption id='FM'>Рекрут</figcaption>
+				<img src="potions/members/elder.png" id='elder' onclick='changePage(2)'><figcaption id='SM'>Доверенный</figcaption>
+				<img src="potions/members/coleader.png" id='coleader' onclick='changePage(3)'><figcaption id='TM'>Капитан</figcaption>
+				<img src="potions/members/leader.png" id='leader' onclick='changePage(4)'><figcaption id='LEAD'>Глава</figcaption>
+				<p id='hello'>Укажите уровень доступа<br>Доступны рекрут и доверенный. Ведется разработка</p>
+				<div>По мере выполнения задания вы будете повышаться в ранге, а значит - вам будет открыт доступ к более продвинутым технологиям и возможностям! <br><br>Начинайте с рекрута и продвигайтесь!</div>
+			</div>
+		</div>
+		
+	<div id="guide">
+		<div id="ballon">
+				<p id="texting"></p>
+				<img id='guidepic' src="">
+				<button id='getguideaway' onclick='guideAway()'>Приступить!</button>
+		</div>
+	</div>
+		
+		
+	<div id='MemberLab'>
+		<button id='MemToStart' onclick='changePage(1)'>К экрану рангов</button>
+		<button id='summonMGuide' onclick='summonGuide(1)'>Послушать советника</button>
+		<div id='task'>
+			<div class = 'Arg' id='ArgOne'><br>Химическое отравление: </div>
+			<div class = 'Arg' id='ArgTwo'>Эстетическое отравление: </div>
+			<div class = 'Arg' id='ArgThree'>Моральное отравление: </div>
+			<button class = 'Arg' id='summon' onclick='genSymptoms()'>Принять посетителя</button>
+		</div>
+			<div id='Herbs'>
+				<img onclick='add("Happ")' src="potions/galepotions/HappHerb.png" alt="" class="Herb control">
+				<img onclick='add("Pust")' src="potions/galepotions/PustHerb.png" alt="" class="Herb control" id='SH'>
+				<img onclick='add("Vital")' src="potions/galepotions/VitalHerb.png" alt="" class="Herb control" id='TH'>
+			</div>
+			<div id='control'>
+				<img onclick='doClean()' src="potions/galepotions/clean.png" alt="" class="Herb">
+				<img onclick='checkPotion()' src="potions/galepotions/send.png" alt="" class="Herb" id='FH'>
+			</div>
+			<canvas id="canv" width='200' height='400'></canvas>
+			<script src="potions/scripts/gamejs.js"></script>
+			<script src="potions/scripts/memberjs.js"></script>
+			<script src="potions/scripts/elderjs.js"></script>
+			<script src="potions/scripts/coleaderjs.js"></script>
+			<div id='mark'></div>
+			<div id='visitor'></div>
+			<div id='counter'><p>До звания доверен-<br>ного осталось: 5 посети-<br>телей.</p></div>
+			<div id='lock'>
+				<img src='potions/other/memberlock.png'>
+				<p>Станьте доверенным, чтобы открыть лабораторию!</p>
+			</div>
+		</div>
+		
+		
+	<div id='eldLab'>
+				<div id='leftAlch'>
+					<img src='potions/ingreds/flamedust.png' id='flamedust' onclick='addIngred("flamedust")'>
+					<img src='potions/ingreds/grass.png' id='grass' onclick='addIngred("grass")'>
+					<img src='potions/ingreds/icepot.png' id='icepot' onclick='addIngred("icepot")'>
+					<img src='potions/ingreds/starroot.png' id='starroot' onclick='addIngred("starroot")'>
+				</div>
+				
+				<div id='eq'>
+					<div id='AlchF'></div>
+					<div id='plus'><img src='potions/ingreds/plus.png'></div>
+					<div id='AlchS'></div>
+				</div>
+				
+				<div id='answer'>
+					<div id='res'></div>
+					<div id='markII'></div>
+					<button id='mix' onclick='checkComb(FirstIngred, SecIngred)'>Смешать!</button>
+					<button id='cleaner' onclick='cleanIngreds()'>Очистить!</button>
+					<button id='summonEGuide' onclick='summonGuide(2)'>Послушать советника</button>
+					<button id='EldToStart' onclick='changePage(2)'>Назад к рангам</button>
+				</div>
+				
+				<div id='rightAlch'>	
+					<img src='potions/ingreds/redrombs.png' alt='' id='redrombs' onclick='addIngred("redrombs")'>
+					<img src='potions/ingreds/sugar.png' alt='' id='sugar' onclick='addIngred("sugar")'>
+					<img src='potions/ingreds/waterleaf.png' alt='' id='waterleaf' onclick='addIngred("waterleaf")'>
+					<img src='potions/ingreds/dish.png' alt='' id='dish' onclick='addIngred("dish")'>
+				</div>
+		</div>
+		
+	<div id='coleaderLab'>
+	<div id='reactor'>
+	</div>
+	<div id='ColControl'>
+		<img class='control' onclick='checkGrass()' src='potions/controls/cutdown.png'>
+		<img class='control' onclick='interact()' src='potions/controls/interact.png'>
+		<img class='control' onclick='interact()' src='potions/controls/toKing.png'>
+	</div>
+	<div id='ColBackPack'>
+		<img id='rucksack' class='control' onclick='openBackPack()' src='potions/controls/backpackopen.png'><br>
+		<div id='inventar'>
+		</div>
+	</div>
+	<button id='ColToStart' onclick='changePage(3)'>К экрану рангов</button>
+		<div id='mapHolder'>
+			<div id='company'>
+				<div id='hireman'></div>
+				<div id='hero'><img src='potions/colsprites/colfront.gif'></div>
+			</div>
+			<div id='map'>
+			<div id='corovan'><img src='potions/colsprites/corovan/korovanright.gif'></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

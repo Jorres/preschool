@@ -1,0 +1,161 @@
+﻿@import url(coleader.css);
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P&subset=latin,cyrillic);
+#texting {font: 10px/1.7 "Press Start 2P", sans-serif; color: #333;}
+
+html {
+	overflow: hidden;
+	color: #999999;
+	font-family: "Press Start 2P", sans-serif;
+}
+
+p {
+	color: #aaa;
+	padding: 5px;
+	-webkit-transform: scale(1.1, 1.0);
+    -moz-transform: scale(1.1, 1.0);
+    -ms-transform: scale(1.1, 1.0);
+    -o-transform: scale(1.1, 1.0);
+    transform: scale(1.1,1.0);
+}
+
+body {
+	background: url(../stolenWood.png);
+	background: url(../sandwallBg.png);
+}
+
+#authorisation, #authorisation div, #guildname, #shine, #accept, #coleaderLab, #mapHolder,
+#map, #ballon, #guide, #texting, #guide img, #getguideaway, #company, #ColControl, #control, #equipment, #eqContent, #reactor, #corovan, #shadow, #quester, #mapquester, #mapguard, #townHolder, #townMap
+{position: absolute;}
+
+#common img, #shine, #authorisation div, #guild, #authorisation, #profile, #profile img, #mapHolder, #reactor, #reactor img, #mainbuttons img , #questimg, #questtext, #quester, #townHolder, .side
+{border: 8px groove #26527C;}
+
+#newColGame {
+	top: 200px;
+	left: 20px;
+	height: 30px;
+    width: 200px;
+	float: right;
+	margin-right: 105px;
+}
+
+.buttons {
+	background: #33CCCC;
+	padding: 5px;
+	margin: 5px;
+}
+
+#getguideaway {
+	bottom: 41px;
+	right: 240px;
+}
+
+#guide {
+	top: 300px;
+	padding: 30px 100px;
+	z-index: 510;
+	left: -1000px;
+}
+
+#ballon {
+	width: 560px;
+	height: 360px;		
+	background-color: white;
+	padding: 10px; 
+	border: 4px solid gray;
+	float: left;
+	z-index: 500;
+	margin: 20px;
+	border-radius: 10px;
+}
+
+#guide img {
+	left: 460px;
+	top: 10px;
+}
+
+#guide p{
+	margin-right: 160px;
+	padding: 0 0 0 39px;
+}
+
+#table{
+	position: fixed;
+	bottom: -60px;
+	left: 0px;
+	z-index: 20;
+}
+
+#shine, #authorisation div, #guild , #profile , #coleaderLab,#authorisation {
+	background: url(../stolenMetal.png);
+}
+
+#map, .control, #equipment, #grass0, #grass1, #grass2, #grass3, #grass4, #grass5, #mainbuttons img, #mapquester, #mapguard, #townMap, .side { 
+	-webkit-transition: 0.3s ease-in-out 0s;
+    -moz-transition: 0.3s ease-in-out 0s;
+    -o-transition: 0.3s ease-in-out 0s;
+    transition: 0.3s ease-in-out 0s;
+}
+
+#common, #shine, #coleaderLab, #profile , #reactor, #reactor img, #guide, #townHolder {
+	-webkit-transition: 1s ease 0s;
+    -moz-transition: 1s ease 0s;
+    -o-transition: 1s ease 0s;
+    transition: 1s ease 0s;
+}
+
+#shadow {
+	-webkit-transition: 1.5s ease 0s;
+    -moz-transition: 1.5s ease 0s;
+    -o-transition: 1.5s ease 0s;
+    transition: 1.5s ease 0s;
+}
+
+
+#accept {
+	top: 300px;
+	width: 200px;
+	height: 30px;
+	left: 200px;
+	box-shadow: 0px 0px 100px #33CCCC;
+}
+
+#shine {
+	width: 600px;
+	height: 600px;
+	top: 100px;
+	left: 330px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 200px #FF9200;
+}
+
+
+#guild {
+	width: 600px;
+	height: 80px;
+	background: url(../sandBg.png);
+}
+
+#guild img {margin-left: 80px;}
+
+
+#common img {
+	display: block;
+	margin: 50px auto;
+}
+
+#common img[onclick] {margin-top: 200px;} 
+#common img[onclick]:hover {
+	cursor: pointer;
+	box-shadow: 0px 0px 50px rgba(100, 100, 100, 0.9);
+}
+
+#authorisation {
+	width: 700px;
+	height: 250px;
+	top: 200px;
+	left: 265px;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 0px 8px 2px black;
+}

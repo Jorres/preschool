@@ -1,0 +1,108 @@
+﻿#coleaderLab {
+	width: 1250px;
+	height: 750px;
+	border-top: 8px groove #26527C;
+	border-radius: 10px;
+	box-shadow: 0px 8px 2px black;
+	opacity: 0;
+	top: -1000px;
+	left: 10px;
+}
+
+#mapHolder, #ColControl {
+	width: 800px;
+	height: 620px;
+	left: 30px;
+	top: 100px;
+	overflow: hidden;
+}
+
+#mapHolder {background: url(../sandBg.png);}
+
+#map {
+	background: url(../sandBg.png);
+	width: 3600px;
+	height: 3600px;
+	left: -1170px;
+	top: -1270px;
+}
+
+#company {
+	top: 275px;
+	left: 362px;
+	z-index: 100;
+	width: 110px;
+}
+
+#ColControl {
+	width: 140px;
+	left: 900px;
+	border: 8px groove #26527C;
+	background: url(../stoneBg.png)
+}
+
+#ColBackPack {
+	right: 30px;
+	width: 140px;
+	border: 8px groove #26527C;
+	top: 100px;
+	overflow: hidden;
+	height: 620px;
+	background: url(../stoneBg.png);
+	z-index: 110;
+}
+
+#inventar {
+	border: 5px groove #26527C;
+	background: url(../mapInteractive/inventar.png);
+	width: 630px;
+	left: 200px;
+	top: 20px;
+	height: 525px;
+}
+
+.control {
+	margin: 10px;
+	border-radius: 10px;
+	background: #CCCCCC;
+}
+
+.control:hover {
+	box-shadow: 0px 25px 5px #33CCCC;
+}
+
+#reactor {
+	height: 300px;
+	width: 400px;
+	top: -500px;
+	left: 230px;
+	z-index: 105;
+	background: url(../stoneBg.png);
+	font: 20pt Impact, sans-serif;
+	color: #c0c0c0;
+}
+
+#reactor p {
+	padding: 5px 25px;
+}
+
+
+#reactor img {
+	background: url(../stoneBg.png);
+	margin-left: 85px;
+	padding: 5px;
+}
+
+#hireman {
+	position: absolute;
+	right: 30px;
+}
+
+#corovan {
+	-webkit-transition: 1.2s linear 0s;
+    -moz-transition: 1.2s linear 0s;
+    -o-transition: 1.2s linear 0s;
+    transition: 1.2s linear 0s;
+	top: 0px;
+	left: 0px;
+}

@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif; }
+
+body {
+  background: url(sp-images/field.png);
+  min-width: 1000px; }
+
+#content {
+  padding: 30px; }
+
+.captain h2 {
+  background-color: orange; }
+.captain:after {
+  background: linear-gradient(to bottom, #1e0f99, transparent); }
+
+.cocaptain h2 {
+  background-color: orange; }
+.cocaptain:after {
+  background: linear-gradient(to bottom, #1e0f99, transparent); }
+
+a .project {
+  color: #333; }
+
+.project {
+  height: 400px;
+  width: 400px;
+  position: relative;
+  float: left;
+  margin: 40px;
+  background-color: white; 
+  border: 3px solid navy;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.2); }
+  
+  .project img {
+    width: 400px;
+    height: 240px; }
+	
+  .project:after {
+    content: '';
+    width: 400px;
+    height: 240px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0.7; }
+	
+  .project h2 {
+    height: 30px;
+    width: 300px;
+    position: absolute;
+    top: -5px;
+    left: 5px;
+    z-index: 20;
+    padding: 5px;
+    color: white; }
+	
+  .project p {
+    margin: 10px; }
+
+footer {
+  height: 100px;
+  clear: both; }

@@ -1,0 +1,75 @@
+@font-face {
+	font-family: LM;
+	src: url(../src/Little-Monster.ttf);
+}
+
+body, .recBtn {
+	background:  url(../src/mainFone.jpg);
+	font-family: LM, sans-serif;
+	font-size: 28px;
+	overflow: hidden;
+}
+
+#playscreen {
+	width: 1500px;
+	height: 1000px;
+	position: absolute;
+	top: -2000px;
+}
+
+#startGame, #startGame button {
+	width: 40%;
+	margin-left: 30%;
+	box-shadow:  0px 0px 10px #009D91;
+}
+
+#startGame {
+	position: absolute;
+	height: 300px;
+	top: 200px;
+	border: 2px solid black;
+	background:  url(../src/mainFone.jpg);
+	border-radius: 100px;
+}
+
+#startGame button {
+	margin-top: 20px;
+	height: 70px;
+	font-family: LM, sans-serif;
+	font-size: 48px;
+	border-radius: 10px;
+}
+
+#startGame div {
+	position: absolute;
+	width: 80px;
+	height: 150px;
+	margin: 70px 0px 20px 50px;
+	border: 2px solid black;
+	border-radius: 10px;
+}
+
+#helloMan{
+	right: 50px;
+	top: 0px;
+}
+
+#map {
+	margin: 100px;
+	border: 2px solid black;
+	width: 832px;
+	height: 416px;
+	position: absolute;
+	top: 82px;
+}
+
+.cell {
+	border: 2px solid black;
+	width: 100px;
+	height: 100px;
+	float: left;
+	-webkit-transition: 0.2s ease-in-out 0s;
+    -moz-transition: 0.2s ease-in-out 0s;
+    -o-transition: 0.2s ease-in-out 0s;
+    transition: 0.2s ease-in-out 0s;
+}

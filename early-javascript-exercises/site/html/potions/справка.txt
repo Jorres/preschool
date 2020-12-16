@@ -1,0 +1,75 @@
+¬ координатах: 
+0 - пуста€ клетка
+1 - крепость алхимиков
+2 - крепость рандомна€
+3 - палатка фрименов
+4 - цветы
+5 - непроходима€ стена
+6 - зона действи€ лучников
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class='stat' id='title'>sdfsdfsdf</div>
+			<div class='stat' id='healed'>dsfsdfsdf</div>
+			<div class='stat' id='opened'>sdfsdfsdf</div>
+
+
+
+
+	function initProfile() {
+		if (LS.getItem('rank') == undefined) { //в первый раз
+			LS.setItem('rank', 'member');
+		}
+		
+		value = LS.getItem('rank');
+		
+		document.getElementById("profile").innerHTML = "<img src = 'members/" + value + ".png'>";
+		//document.getElementById("title").innerHTML = '–анг: ' + value;
+		//document.getElementById("healed").innerHTML = '¬ылечено клиентов: ' + window.LS.getItem('guys');
+	}
+		initProfile();
+		
+		function expandProfile(x) { 
+		switch (x) {
+			case(1):
+				document.getElementById("profile").style.height= '400px';
+			break;
+			
+			case(2):
+				document.getElementById("profile").style.height= '110px';
+			break;
+		}
+	}
+	
+			if (LS.getItem('rank') === undefined) { //в первый раз
+			LS.setItem('rank', 'member');
+		}
+		
+		if (totalHealed == undefined) {
+			totalHealed = 0;
+		} else {
+			var totalHealed = parseInt(LS.getItem('guys'));
+		};
+		
+		// переменные local storage //
+		// rank: ранг	
+		// guys: число вылеченных

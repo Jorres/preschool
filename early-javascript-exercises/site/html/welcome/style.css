@@ -1,0 +1,111 @@
+/*	Добро пожаловать в мой цсс!
+	чтобы вы не потерялись, все стили систематизированны
+
+		> высота/ширина
+		> поля/отступы
+		> позиционирование
+		> бг/рамочка
+		> шрифт
+		> анимация
+*/
+body {
+	padding: 0px;
+	margin: 0px;
+
+	background-color: lightblue;
+
+	font-family: sans-serif;
+	color: rgb(32, 55, 124);	
+}
+
+header {
+	height: 280px;
+
+	padding:  25px 0px;
+	margin: 0px;
+	
+	background-image: url(bg.png);
+	background-size: 10%;
+
+	font-size: 18pt;	
+}
+
+#main {
+	height: 250px;
+	width: 700px;
+
+	padding: 10px;
+
+	float: left;
+	
+	background-color: white;
+}
+
+header img {
+	height: 250px;
+	float: left;
+}
+
+#buttons button {
+	height: 135px;
+	width: 150px;
+	
+	padding: 10px;	
+	margin: 0px;
+
+	background-color: white;
+	border: none;
+	opacity: 0.9;
+	
+	font-size: 16pt;
+
+	transition: opacity 0.3s;
+}
+
+#buttons button:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+#buttons {
+	float: left;
+}
+
+.project {
+	height: 300px;
+	width: 300px;	
+
+	margin: 20px;
+	padding: 10px;
+
+	float: left;
+
+	background-color: white;
+	border-left: 7px solid #ddd;
+
+	font-size: 14pt;
+
+	transition: box-shadow 0.3s;
+}
+
+.project:hover {
+	box-shadow: 5px 5px 10px rgba(50, 50, 50, 0.5);
+}
+
+.project button {
+	height: 30px;
+	width: 100px;
+}
+
+.project img {
+	height: 200px;
+}
+
+.project h2 {
+	font-size: 18pt;
+	margin: 0px;
+}
+
+a {
+	color: inherit;
+}

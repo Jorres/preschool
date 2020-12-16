@@ -1,0 +1,72 @@
+﻿#markII {
+	height: 20px;
+	width: 100px;
+	top: 140px;
+	left: 34px;
+	padding-left: 20px;
+}
+
+#eldLab {
+	width: 1250px;
+	border-top: 8px groove #26527C;
+	border-radius: 10px;
+	box-shadow: 0px 8px 2px black;
+	opacity: 0;
+	left: -2000px;
+	top: 20px;
+	height: 750px;
+}
+
+#flamedust, #grass, #icepot, #redrombs, #sugar, #waterleaf, #starroot, #dish {
+	left: 12px;
+	top: 40px;
+}
+
+#grass, #sugar {top: 180px;}
+#icepot, #waterleaf {top: 320px;}
+#starroot, #dish {top: 460px;}
+
+#flamedust:hover, #grass:hover, #icepot:hover, #redrombs:hover, #sugar:hover, #waterleaf:hover, #starroot:hover, #dish:hover{box-shadow: 0px 0px 60px #E7003E;}
+
+#leftAlch, #rightAlch {
+	width: 140px;
+	height: 600px;
+	top: 100px;
+	border-radius: 10px;
+}
+
+#eq {
+	width: 400px;
+	height: 140px;
+	top: 100px;
+	left: 290px;
+	border-radius: 10px;
+}
+
+#answer {
+	width: 200px;
+	height: 180px;
+	top: 300px;
+	left: 390px;
+	border-radius: 10px;
+}
+
+#leftAlch {left: 40px;}
+
+#rightAlch {right: 300px;}
+
+#AlchF, #AlchS {
+	top: 10px;
+	width: 100px;
+	height: 100px; 
+}
+
+#AlchF {left: 10px;}
+#AlchS {right: 10px;}
+
+#res {
+	top: 10px;
+	width: 100px;
+	height: 100px;
+	left: 43px;
+}

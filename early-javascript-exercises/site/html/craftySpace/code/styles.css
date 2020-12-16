@@ -1,0 +1,9 @@
+@font-face {
+	font-family: LM;
+	src: url(../Hardpixel.OTF);
+}
+
+body {
+    overflow: hidden;
+    transition: 2s 0s ease-in-out;
+}

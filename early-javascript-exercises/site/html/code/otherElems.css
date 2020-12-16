@@ -1,0 +1,252 @@
+#reactor {
+	position: absolute;
+	left: 986px;
+	width: 250px;
+	height: 680px;
+	/*border: 4px solid black;*/
+    text-align: center;
+}
+
+#building {margin-bottom: 20px;}
+
+/* arrows */
+#cellPic {
+	position: absolute;
+	top: 80px;
+	left: 72px;
+}
+
+.arrow {
+	border: 2px solid black;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+}
+
+#top {
+	top: 20px;
+	left: 97px;
+	background: url(../src/toparrow.png);
+}
+
+#bottom {
+	top: 190px;
+	left: 97px;
+	background: url(../src/bottomarrow.png);
+}
+
+#left {
+	top: 105px;
+	left: 10px;
+	background: url(../src/leftarrow.png);
+}
+
+#right {
+	top: 105px;
+	right: 10px;
+	background: url(../src/rightarrow.png);
+}
+/* arrows */
+
+.margin {
+	margin: 10px 10px 10px;
+}
+
+.margin p {
+    margin: 2px;
+}
+
+.stats {
+	width: 222px;
+	height: 20px;
+	border: 2px solid black;
+	margin: 10px 12px 0px;
+	text-align: center;
+}
+
+#points {margin: 260px 12px 0px;} /* cдвиг вниз блоков реактора */
+
+.forces{
+	padding: 4px;
+	height: 35px;
+	border: 4px solid black;
+	margin: 8px;
+	text-align: center;
+}
+
+.forces img {
+	padding: 4px;
+	float: left;
+    margin-top: -18px;
+    border: 3px dashed black;
+}
+
+.recBtn {
+	border: 2px solid black;
+	width: 225px;
+	height: 40px;
+	margin: 7px 12px 0px 12px;
+}
+
+.highlight       {box-shadow: 0px 0px 15px #3050AA;}
+.highlight:hover {box-shadow: 0px 0px 40px #3050AA;}
+
+#resources, #news {
+	position: absolute;
+	top: 20px;
+	height: 65px;
+	left: 108px;
+	width: 606px;
+	border: 4px solid black;
+}
+
+#resources div {
+	width: 275px;
+	height: 40px;
+	border: 2px solid black;
+	margin: 10px;
+	text-align: center;
+	font-size: 45px;
+    float: left;
+}
+
+#resources div img {
+	position: absolute;
+	top: 0px;
+	left: -4px;
+	width: 60px;
+	height: 60px;
+}
+
+#repairKits img {
+    left: 288px !important; /* какие то мутки с приоритетом наследования, пришлось закостылить*/
+}
+
+#news {
+	top: 100px;
+	opacity: 0;
+}
+
+.notice {
+	margin: 2px;
+	border: 2px solid black;
+	height: 56px;
+	width: 143px;
+	float: right;
+	font-size: 20px;
+	overflow: hidden;
+	background: lightblue;
+}
+.notice p {margin: 6px;}
+.notice:hover {height: 300px;}
+
+.swift {
+	-webkit-transition: 0.5s ease-in-out 0s;
+    -moz-transition: 0.5s ease-in-out 0s;
+    -o-transition: 0.5s ease-in-out 0s;
+    transition: 0.5s ease-in-out 0s;
+}
+
+#tutorial {
+    position: absolute;
+    top: 20px;
+    width: 1000px;
+    height: 700px;
+    left: -2000px;
+    border: 5px solid black;
+    border-radius: 10px;
+    background: lightblue;
+}
+
+#tutorial p {
+    margin: 12px;
+    float: left;
+}
+
+#intro {margin: 20px;}
+
+#intro img {
+    float: left;
+    border: 2px solid black;
+    margin: 8px;
+}
+
+#tutorial>img {
+    float: left;
+    margin: 20px;
+    border: 2px solid black;
+}
+
+.info {
+    margin: 10px;
+    width: 350px;
+    height: 200px;
+    float: left;
+}
+
+.info img {margin: 8px;}
+
+#curBuildImg {
+    float: left;
+    margin: 5px;
+}
+
+#curForceImg {
+    float: left;
+    margin: 10px;
+}
+
+#pause {
+    position: absolute;
+    top: 28px;
+    left: 20px;
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+    background: url(../src/pause.png);
+}
+
+#Icoord, #Ycoord {
+    position: absolute;
+    z-index: 5;
+    opacity: 0;
+}
+
+#Icoord {
+    left: 20px;
+    top: 194px;
+    width: 70px;
+}
+
+#Ycoord {
+    left: 120px;
+    top: 600px;
+}
+
+#Icoord div, #Ycoord div {
+    float: left;
+    margin: 6px;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    font-size: 80px;
+}
+
+#Icoord div {margin-bottom: 35px;}
+
+#Ycoord div {margin: 5px 22px 0px 20px;}
+
+input {text-align: center;}
+
+#gameEnder {
+    position: absolute;
+    left: 200px;
+    top: -1800px;
+    font-size: 60px;
+    padding: 20px;
+    border: 2px solid black;
+    background: lightblue;
+    width: 300px;
+    height: 200px;
+    z-index: 10;
+}

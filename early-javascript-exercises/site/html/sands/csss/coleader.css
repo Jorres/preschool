@@ -1,0 +1,205 @@
+﻿#coleaderLab {
+	width: 1250px;
+	height: 750px;
+	border-top: 8px groove #26527C;
+	border-radius: 10px;
+	box-shadow: 0px 8px 2px black;
+	opacity: 0;
+	top: -1000px;
+	left: 10px;
+}
+
+#solutions {
+	width: 200px;
+	height: 50px;
+	margin: 290px 0px 0px 100px;
+	display: none;
+}
+
+#mapHolder, #ColControl{
+	width: 890px;
+	height: 710px;
+	left: 20px;
+	top: 20px;
+	overflow: hidden;
+}
+
+#shadow {
+	width: 890px;
+	height: 710px;
+	background: black;
+	opacity: 0;
+	z-index: 1000;
+}
+
+#mapHolder, #townHolder {background: url(../sandBg.png);}
+
+#map {
+	background: url(../sandBg.png);
+	width: 3600px;
+	height: 3600px;
+	left: -1170px;
+	top: -1270px;
+	border: 10px dashed #C0C0C0; 
+}
+
+#company {
+	top: 382px;
+	left: 452px;
+	z-index: 5005;
+	width: 110px;
+}
+
+#ColControl {
+	width: 120px;
+	left: 960px;
+	border: 8px groove #26527C;
+	background: url(../stoneBg.png)
+}
+
+#equipment {
+	right: 10px;
+	width: 120px;
+	border: 8px groove #26527C;
+	top: 20px;
+	overflow: hidden;
+	height: 710px;
+	background: url(../stoneBg.png);
+	z-index: 10000;
+}
+
+#eqContent {
+	border: 5px groove #26527C;
+	background: url(../mapInteractive/inventar.png);
+	width: 630px;
+	left: 280px;
+	top: 130px;
+	height: 525px;
+}
+
+.control {
+	margin: 10px;
+	border-radius: 10px;
+	background: #CCCCCC;
+	float: left;
+}
+
+
+.control:hover, #mainbuttons img:hover  {
+	box-shadow: 0px 25px 5px #33CCCC;
+}
+
+#reactor {
+	height: 300px;
+	width: 400px;
+	top: -600px;
+	left: 230px;
+	z-index: 10000;
+	background: url(../stoneBg.png);	
+	color: #c0c0c0;
+}
+
+#reactor p {
+	padding: 5px 45px;
+	font-size: 18pt;
+}
+
+#reactor img {
+	background: url(../stoneBg.png);
+	margin-left: 85px;
+	padding: 5px;
+}
+
+.tutor {
+	float: left;
+	background: #c0c0c0 !important;
+	margin-left: 5px !important;
+	margin-right: 40px;
+	margin-top: 15px;
+}
+
+.side {
+	width: 400px;	
+	float: right;
+	margin: 18px;
+	height: 600px;
+	box-shadow: 0px 0px 50px #A66F00;
+}
+
+.side:hover {
+	box-shadow: 0px 0px 130px #000000;
+}
+
+.side img {
+	box-shadow: 0px 0px 70px #A66F00;
+	margin-top: 20px;
+}
+
+.side p {
+	font: 10px;
+	color: #aaa;
+}
+
+#freemans {
+	background: url(../sandwallBg.png);
+}
+
+#harks {
+	background: url(../strangeformBg.png);
+}
+
+#hireman {
+	position: absolute;
+	right: 30px;
+}
+
+#corovan {
+	-webkit-transition: 1.2s linear 0s;
+    -moz-transition: 1.2s linear 0s;
+    -o-transition: 1.2s linear 0s;
+    transition: 1.2s linear 0s;
+	top: 0px;
+	left: 0px;
+}
+
+#questimg {
+	width: 300px;
+	height: 300px;
+	margin: 30px;
+	float: right;
+}
+
+#questtext {
+	z-index: 2000;
+	height: 150px;
+	width: 500px;
+	margin: 355px 0px 20px 36px;
+	padding-left: 40px;
+}
+
+#questtext p {color: #1A2D2C !important;}
+
+#quester {
+	width: 200px;
+	height: 300px;
+	margin: 30px;
+}
+
+#townHolder {
+	width: 890px;
+	height: 710px;
+	left: 20px;
+	top: -1000px;
+	overflow: hidden;
+	z-index: 5000;
+}
+
+#townMap{
+	width: 990px;
+	height: 1260px;
+	left: 0px;
+	top: -810px;
+	background: url(../town/town.gif);
+	box-shadow: 0px 0px 300px #FFC640;
+}
+

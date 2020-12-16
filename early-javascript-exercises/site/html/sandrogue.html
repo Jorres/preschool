@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>SandRogue</title>
+	<meta charset='utf-8'>
+	<script src="sands/scripts/gamejs.js"></script>
+	<script src="sands/scripts/coleaderjs.js"></script>
+	<script src="sands/scripts/townscript.js"></script>
+	<script src="sands/quests/queststexts.js"></script>
+	<link rel="stylesheet" type="text/css" href="sands/csss/gamecss.css">
+</head>
+	
+<body onkeypress='pressArrow()'>
+<!— Yandex.Metrika counter —> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter38086335 = new Ya.Metrika({ id:38086335, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/38086335" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!— /Yandex.Metrika counter —>	
+	<div id="sound"><audio src='sands/soundtrack/begin.mp3' autoplay loop></div>
+
+	<div id='common'>
+		<img src='sands/start/title.png'>			
+		<img src='sands/start/play.png' onclick='toDesert()'>
+	</div>
+		
+	<div id="guide">
+		<div id="ballon">
+				<p id="texting"></p>
+				<img id='guidepic' src=''>
+				<button class='buttons' id='getguideaway' onclick='guideAway()'>Продолжить!</button>
+				<div id='solutions'>
+				</div>
+		</div>
+	</div>
+
+		
+	<div id='coleaderLab'>
+	
+		<div id='townHolder'>
+			<div id='townMap'>
+			</div>
+		</div>
+		
+		<div id='reactor'>
+		</div>
+		
+		<div id='ColControl'>
+			<img class='control' onclick='checkGrass()' src='sands/controls/cutdown.png'>
+			<img class='control' onclick='interact()' src='sands/controls/interact.png'>
+			<img class='control' onclick='showTutorial()' src='sands/controls/guide.png'>
+			<img class='control' onclick='toDesert()' src='sands/controls/exit.png'>
+		</div>
+		<div id='equipment'>
+			<img class='control' onclick='openBackPack(1)' src='sands/controls/backpackopen.png'>
+			<img class='control' onclick='openBackPack(2)' src='sands/controls/scroll.png'>
+		</div>
+		<div id='mapHolder'>
+			<div id='shadow'></div>
+			<div id='company'>
+				<div id='hireman'></div>
+				<div id='hero'><img src='sands/colsprites/colfront.gif'></div>
+			</div>
+			<div id='map'>
+			<div id='corovan'><img src='sands/colsprites/corovan/korovanright.gif'></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

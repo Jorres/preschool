@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font: 14pt/1.5 sans-serif;
+  background: white;
+  color: #000; }
+
+h1 {
+  font-size: 3em; }
+
+h2 {
+  font-size: 1.7em; }
+
+#color {
+  font-size: 2.7em;
+  font-weight: bold;
+  padding: 20px; }
+
+#container {
+  width: 800px;
+  margin: 30px auto;
+  //border: 1px solid black;
+  text-align: center; }
+
+#table {
+  width: 500px;
+  height: 500px;
+  //border: 1px solid black;
+  margin: 20px auto;
+  padding: 0; }
+
+.cell {
+  float: left;
+  background: red; }
+  .cell:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */

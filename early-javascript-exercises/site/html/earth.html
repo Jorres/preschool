@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EarthBang</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="code/earthTable.css">
+	<link rel="stylesheet" type="text/css" href="code/otherElems.css">
+	<script src="code/jquery-3.0.0.min.js"></script>
+</head>
+
+<body>
+    
+    <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter38086335 = new Ya.Metrika({ id:38086335, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/38086335" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    
+	<div id="startGame" class="swift">
+		<div></div>
+		<button onclick="startGame()">START</button>
+		<button>SETTINGS</button>
+		<button onclick="showTutorial()">TUTORIAL</button>	
+		<div id="helloMan"></div>
+	</div>
+    
+    <div id="gameEnder" class="swift">
+    </div>
+    
+    <div id="tutorial" class="swift">
+    </div>
+
+
+	<div id="playscreen" class="swift">
+        <div id="pause" onclick="initPause()"></div>
+        
+        <div id="Icoord" class="swift"><div>1</div><div>2</div><div>3</div><div>4</div></div>
+        
+        <div id="Ycoord" class="swift"><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div></div>
+        
+        <div id="map">
+        </div>
+        <div id="resources">
+            <div id="money"><img src="src/money.png">1000</div>
+            <div id="repairKits"><img src="src/hammer.png">0</div>
+        </div>
+
+        <div id="news" class="swift">
+            <div id="n4" class="notice swift"></div>
+            <div id="n3" class="notice swift"></div>
+            <div id="n2" class="notice swift"></div>
+            <div id="n1" class="notice swift"></div>
+        </div>
+
+        <div id="reactor">
+        </div>
+	</div>
+	
+	<!-- мне не хочется использовать document.ready, еще один отступ на всю страницу, фу! -->
+	<script src="code/earthArray.js"></script>
+	<script src="code/userActions.js"></script>
+	<script src="code/noMoreRedacting.js"></script>
+	<script src="code/natureActions.js"></script>
+	<script src="code/forcesActions.js"></script>
+    <script src="code/tutorial.js"></script>
+
+    </body>
+</html>
